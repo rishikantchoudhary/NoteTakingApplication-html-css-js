@@ -1,4 +1,5 @@
-/* Global */
+/* ----------------------------------------------- Global ----------------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -69,7 +70,56 @@ h2 {
 
 /* ----------------------------------------------- Add note section. ----------------------------------------------- */
 
+.add-note-division {
+    margin: 2rem auto;
+    max-width: 47.5rem;
+}
 
+.add-note {
+    margin: auto;
+    height: 200px;
+    aspect-ratio: 0.83;
+    background-color: #E4C786;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.add-note-button {
+    width: 70%;
+    aspect-ratio: 1;
+    background-color: #EDE7C3;
+    border: 2px solid #A27E62;
+    border-radius: 50%;
+    position: relative;
+    transition: all ease-in-out 0.15s;
+}
+
+.add-note-button:hover {
+    scale: 1.1;
+}
+
+.plus {
+    width: 85%;
+    height: 5px;
+    background-color: #6F5643;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 48%;
+    left: 7.5%;
+}
+
+.plus-line2 {
+    transform: rotate(90deg);
+}
+
+.add-note-text {
+    font-size: 1.5rem;
+    color: #6F5643;
+}
 
 /* ----------------------------------------------- Display note section. ----------------------------------------------- */
 
@@ -94,7 +144,7 @@ h2 {
     position: relative;
 }
 
-.delete-note{
+.delete-note {
     width: 35px;
     height: 35px;
     background: none;
@@ -105,21 +155,29 @@ h2 {
     visibility: hidden;
 }
 
-.delete-note-png{
+.delete-note-png {
     width: 35px;
 }
 
-.delete-note-png:hover{
+.delete-note-png:hover {
     filter: drop-shadow(0 0 5px #FF212B);
 }
 
-.delete-note-active{
+.delete-note-active {
     visibility: visible;
 }
 
 .note-container {
     margin: auto;
     width: 80%;
+}
+
+.note-title {
+    padding-top: 0.75rem;
+    height: 3.125rem;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
 }
 
 .note-hr {
@@ -130,13 +188,8 @@ h2 {
     border-radius: 2px;
 }
 
-.note-title {
-    padding-top: 0.75rem;
-    font-size: 14px;
-    font-weight: 600;
-}
-
 .note-content {
+    height: 6.75rem;
     font-size: 13px;
     font-weight: 400;
 }
@@ -149,9 +202,7 @@ h2 {
     right: 10px;
 }
 
-
-
-/* -----------------------------------------------   Scrollbar   ----------------------------------------------- */
+/* ----------------------------------------------- Body Scrollbar ----------------------------------------------- */
 
 body::-webkit-scrollbar {
     width: 10px;
@@ -169,7 +220,6 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background-color: #6f5643cc;
 }
-
 
 /* 
 font-family: 'Concert One', cursive;
