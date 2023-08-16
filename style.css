@@ -1,0 +1,177 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Concert One', cursive;
+    background-color: #ECE6C2;
+    box-sizing: content-box;
+}
+
+.container {
+    margin: auto;
+    width: 75vw;
+}
+
+/* ----------------------------------------------- Header and Footer ----------------------------------------------- */
+
+h1 {
+    height: 6.25rem;
+    margin-top: 2rem;
+    color: #6F5643;
+    font-size: 6em;
+    font-weight: 400;
+    text-shadow: 5px 5px #73BDA8;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #6F5643;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.main-seperation-hr {
+    height: 8px;
+    background-color: #6F5643;
+    border: none;
+    border-radius: 10px;
+}
+
+.footer-content {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-details {
+    padding: 1rem 0.5rem;
+    font-size: 1.125rem;
+    color: #6F5643;
+}
+
+.my-socials {
+    padding: 1.5rem;
+    min-width: 14rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-socials-icon {
+    height: 40px;
+}
+
+/* ----------------------------------------------- Add note section. ----------------------------------------------- */
+
+
+
+/* ----------------------------------------------- Display note section. ----------------------------------------------- */
+
+.display-note {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-content: center;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.note {
+    height: 200px;
+    aspect-ratio: 0.83;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #EAC951;
+    color: #6F5643;
+    border-radius: 10px;
+    box-shadow: 3px 3px #957234;
+    position: relative;
+}
+
+.delete-note{
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    visibility: hidden;
+}
+
+.delete-note-png{
+    width: 35px;
+}
+
+.delete-note-png:hover{
+    filter: drop-shadow(0 0 5px #FF212B);
+}
+
+.delete-note-active{
+    visibility: visible;
+}
+
+.note-container {
+    margin: auto;
+    width: 80%;
+}
+
+.note-hr {
+    margin: 0.5rem 0;
+    height: 2px;
+    background-color: #000;
+    border: none;
+    border-radius: 2px;
+}
+
+.note-title {
+    padding-top: 0.75rem;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.note-content {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.note-dateAndTime {
+    font-size: 11px;
+    color: #FFF;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+
+
+/* -----------------------------------------------   Scrollbar   ----------------------------------------------- */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #cdc28c;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6f56437f;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #6f5643cc;
+}
+
+
+/* 
+font-family: 'Concert One', cursive;
+font-family: 'Noto Sans', sans-serif;
+*/
