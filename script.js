@@ -58,3 +58,27 @@ noteContents.forEach((noteContent)=>{
         noteContent.innerText = `${noteContent.innerText.slice(0, 105)}...`;
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+const openAddNoteSection = ()=>{
+    addNoteButton.classList.toggle('note-active-button');
+    addNote.classList.toggle('add-note-active');
+    console.log(addNoteText)
+}
+
+
+const addNoteText = document.querySelector('.add-note-text');
+const addNote = document.querySelector('.add-note');
+const addNoteButton = document.querySelector('.add-note-button');
+
+addNoteButton.addEventListener('click', openAddNoteSection)
