@@ -71,14 +71,17 @@ noteContents.forEach((noteContent)=>{
 
 
 const openAddNoteSection = ()=>{
-    addNoteButton.classList.toggle('note-active-button');
+    addNoteButton.classList.toggle('cancel-button');
     addNote.classList.toggle('add-note-active');
-    console.log(addNoteText)
+    saveNoteButton.classList.toggle('save-note-button-active');
+    plusInAddNoteButton.forEach(plus => plus.classList.toggle('toggle-cross'));
 }
 
 
 const addNoteText = document.querySelector('.add-note-text');
 const addNote = document.querySelector('.add-note');
 const addNoteButton = document.querySelector('.add-note-button');
+const saveNoteButton = document.querySelector('.save-note-button');
+const plusInAddNoteButton = document.querySelectorAll('.plus');
 
 addNoteButton.addEventListener('click', openAddNoteSection)

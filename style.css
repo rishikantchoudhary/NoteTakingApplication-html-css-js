@@ -83,15 +83,16 @@ h2 {
 .add-note {
     margin: auto;
     height: 200px;
-    aspect-ratio: 0.83;
+    width: 166px;
     background-color: #E4C786;
     border-radius: 10px;
     position: relative;
+    overflow: hidden;
     transition: all ease-in-out 0.5s;
 }
 
 .add-note-button {
-    width: 70%;
+    width: 7rem;
     aspect-ratio: 1;
     background-color: #EDE7C3;
     border: 2px solid #A27E62;
@@ -100,7 +101,7 @@ h2 {
     top: 10%;
     left: 15%;
     z-index: 2;
-    transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.5s , scale ease-in-out 0.15s;
 }
 
 .add-note-button:hover {
@@ -122,19 +123,46 @@ h2 {
     transform: rotate(90deg);
 }
 
+.add-note-input{
+    margin: auto;
+    width: 60%;
+    color: #6F5643;
+    transform: translateY(-200px);
+    transition: all cubic-bezier(0.75,-0.34, 0.37, 1.38) 0.7s;
+}
+
+.input-row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-text{
+    width: 75%;
+    height: 20px;
+    border: #ffc599;
+    border-radius: 5px;
+}
+
+.body-text{
+    margin-top: 5px;
+    height: 90px;
+    width: 100%;
+    border: #ffc599;
+    border-radius: 5px;
+}
+
 .add-note-text {
+    width: 100%;
+    text-align: center;
     font-size: 1.5rem;
     color: #6F5643;
     position: absolute;
-    left: 33px;
     bottom: 13%;
+    transition: all cubic-bezier(0.75,-0.34, 0.37, 1.38) 0.7s;
 }
 
-.save-note-image{
-    height: 50px;
-}
-
-.note-active-button{
+.save-note-button{
     width: 80px;
     aspect-ratio: 1;
     background-color: #EDE7C3;
@@ -142,12 +170,62 @@ h2 {
     border-radius: 50%;
     position: absolute;
     top: 20%;
-    left: 25%;
+    right: 25%;
+    transition: all ease-in-out 0.5s , scale ease-in-out 0.15s;
 }
+
+.save-note-button:hover{
+    scale: 1.1;
+    .save-note-image{
+        filter: drop-shadow(0 0 5px #1ac192);
+    }
+}
+
+.save-note-image{
+    height: 50px;
+    position: absolute;
+    top: 19%;
+    left: 8%;
+}
+
+/* ----------------------------------------------- When clicked on add note button ----------------------------------------------- */
 
 .add-note-active{
     width: 100%;
     border-radius: 200px;
+    transition: all ease-in-out 0.5s;
+    .add-note-text{
+        transform: translateY(100px);
+    }
+    .add-note-input{
+        transform: translateY(40px);
+    }
+}
+
+.cancel-button{
+    width: 80px;
+    position: absolute;
+    top: 28%;
+    left: 25px;
+    transform: rotate(-45deg);
+}
+
+.toggle-cross{
+    height: 7px;
+    background-color: #FF212B;
+    top: 46%;
+}
+
+.cancel-button:hover{
+    .plus{
+        box-shadow: 0 0 5px red;
+    }
+}
+
+.save-note-button-active{
+    position: absolute;
+    top: 28%;
+    right: 25px;
 }
 
 /* ----------------------------------------------- Display note section. ----------------------------------------------- */
