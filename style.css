@@ -265,12 +265,12 @@ h2 {
     position: absolute;
     top: 5px;
     right: 5px;
-    visibility: hidden;
+    z-index: -1;
 }
 
 .note:hover{
     .delete-note{
-        visibility: visible;
+        z-index: 2;
     }
 }
 
@@ -307,6 +307,8 @@ h2 {
     height: 6.75rem;
     font-size: 13px;
     font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .note-dateAndTime {
@@ -324,7 +326,7 @@ h2 {
 }
 
 .scrollbar::-webkit-scrollbar-track {
-    background-color: #cdc28c;
+    background-color: transparent;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
