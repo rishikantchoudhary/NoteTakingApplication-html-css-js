@@ -248,7 +248,7 @@ h2 {
 
 .note {
     height: 200px;
-    aspect-ratio: 0.83;
+    width: 166px;
     font-family: 'Noto Sans', sans-serif;
     background-color: #EAC951;
     color: #6F5643;
