@@ -64,7 +64,7 @@ h2 {
     justify-content: space-between;
 }
 
-.my-socials>a:hover{
+.my-socials>a:hover {
     scale: 1.1;
     transition: all ease-in-out 0.1s;
 }
@@ -101,7 +101,7 @@ h2 {
     top: 10%;
     left: 15%;
     z-index: 2;
-    transition: all ease-in-out 0.5s , scale ease-in-out 0.15s;
+    transition: all ease-in-out 0.5s, scale ease-in-out 0.15s;
 }
 
 .add-note-button:hover {
@@ -123,21 +123,21 @@ h2 {
     transform: rotate(90deg);
 }
 
-.add-note-input{
+.add-note-input {
     margin: auto;
     width: 60%;
     color: #6F5643;
     transform: translateY(-200px);
-    transition: all cubic-bezier(0.75,-0.34, 0.37, 1.38) 0.7s;
+    transition: all cubic-bezier(0.75, -0.34, 0.37, 1.38) 0.7s;
 }
 
-.input-row1{
+.input-row1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.title-text{
+.title-text {
     padding: 0 5px;
     width: 75%;
     height: 20px;
@@ -147,7 +147,7 @@ h2 {
     border-radius: 5px;
 }
 
-.body-text{
+.body-text {
     margin-top: 5px;
     padding: 5px;
     height: 90px;
@@ -165,10 +165,10 @@ h2 {
     color: #6F5643;
     position: absolute;
     bottom: 13%;
-    transition: all cubic-bezier(0.75,-0.34, 0.37, 1.38) 0.7s;
+    transition: all cubic-bezier(0.75, -0.34, 0.37, 1.38) 0.7s;
 }
 
-.save-note-button{
+.save-note-button {
     width: 80px;
     aspect-ratio: 1;
     background-color: #EDE7C3;
@@ -177,17 +177,18 @@ h2 {
     position: absolute;
     top: 20%;
     right: 25%;
-    transition: all ease-in-out 0.5s , scale ease-in-out 0.15s;
+    transition: all ease-in-out 0.5s, scale ease-in-out 0.15s;
 }
 
-.save-note-button:hover{
+.save-note-button:hover {
     scale: 1.1;
-    .save-note-image{
+
+    .save-note-image {
         filter: drop-shadow(0 0 5px #1ac192);
     }
 }
 
-.save-note-image{
+.save-note-image {
     height: 50px;
     position: absolute;
     top: 19%;
@@ -196,19 +197,21 @@ h2 {
 
 /* ----------------------------------------------- When clicked on add note button ----------------------------------------------- */
 
-.add-note-active{
+.add-note-active {
     width: 100%;
     border-radius: 200px;
     transition: all ease-in-out 0.5s;
-    .add-note-text{
+
+    .add-note-text {
         transform: translateY(100px);
     }
-    .add-note-input{
+
+    .add-note-input {
         transform: translateY(40px);
     }
 }
 
-.cancel-button{
+.cancel-button {
     width: 80px;
     position: absolute;
     top: 28%;
@@ -216,19 +219,19 @@ h2 {
     transform: rotate(-45deg);
 }
 
-.toggle-cross{
+.toggle-cross {
     height: 7px;
     background-color: #FF212B;
     top: 46%;
 }
 
-.cancel-button:hover{
-    .plus{
+.cancel-button:hover {
+    .plus {
         box-shadow: 0 0 5px red;
     }
 }
 
-.save-note-button-active{
+.save-note-button-active {
     position: absolute;
     top: 28%;
     right: 25px;
@@ -268,8 +271,8 @@ h2 {
     z-index: -1;
 }
 
-.note:hover{
-    .delete-note{
+.note:hover {
+    .delete-note {
         z-index: 2;
     }
 }
@@ -336,6 +339,125 @@ h2 {
 
 .scrollbar::-webkit-scrollbar-thumb:hover {
     background-color: #6f5643cc;
+}
+
+/* ----------------------------------------------- Media query ------------------------------------------------- */
+
+@media (max-width: 750px) {
+    .container {
+        width: 100vw;
+    }
+
+    /* Header and Footer */
+
+    h1 {
+        margin: 5vw 0 0 3vw;
+        height: 14vw;
+        font-size: 13vw;
+    }
+
+    h2 {
+        margin-left: 3vw;
+        font-size: 5vw;
+    }
+
+    .footer-content {
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+
+    .my-details {
+        font-size: 4vw;
+    }
+
+    .my-socials {
+        justify-content: center;
+    }
+
+    .my-socials-icon {
+        margin: 0 1rem;
+    }
+
+    /* Add note section */
+
+    .save-note-button,
+    .cancel-note-button {
+        height: 2rem;
+        width: 6rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: white;
+        position: absolute;
+        top: 120%;
+    }
+
+    .add-note-input {
+        width: 80%;
+    }
+
+    .title-text {
+        width: 100%;
+    }
+
+    .cancel-note-button {
+        background-color: #FF212B;
+        left: 10%;
+        transition: all ease-in-out 0.5s, scale ease-in-out 0.15s;
+    }
+
+    .cancel-note-button:hover {
+        scale: 1.1;
+    }
+
+    .save-note-button {
+        background-color: #1ac192;
+        right: 10%;
+    }
+
+    /* When clicked on add note button */
+
+    .add-note-active {
+        margin: auto;
+        width: 90%;
+        border-radius: 1rem;
+
+        .cancel-note-button,
+        .save-note-button {
+            top: 75%;
+        }
+
+        .add-note-input {
+            transform: translateY(20px);
+        }
+    }
+
+    .cancel-button {
+        position: absolute;
+        top: 120%;
+        left: 50%;
+    }
+
+    /* Display note section */
+
+    .display-note {
+        padding: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .note {
+        width: 100%;
+        height: 150px;
+        border-radius: 1rem;
+    }
+
+    .note-container {
+        width: 90%;
+    }
 }
 
 /* 
