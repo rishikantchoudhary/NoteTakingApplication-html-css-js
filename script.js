@@ -17,24 +17,14 @@ window.addEventListener('resize', myfunc);
 myfunc()
 
 
-//++++++++++++++++++++++ For adding responsiveness to the design +++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++ To alter the add note HTML for small screens. ++++++++++++++++++++++++++++++++++++++++++++
 
 const addNote = document.querySelector('.add-note');
 let screenWidth = window.screen.width;
 
-const responsiveness = () => {
-    screenWidth = window.screen.width;
-
-    if (screenWidth <= 750) {
-        addNote.innerHTML = `<button class="add-note-button"><div class="plus plus-line1"> </div><div class="plus plus-line2"> </div></button><span class="add-note-text">ADD NOTE</span><div class="add-note-input"><input type="text" class="title-text" placeholder="Title in 40 Characters" maxlength="40"><textarea class="body-text scrollbar" placeholder="Write here..."></textarea></div><button class="cancel-note-button">Cancel</button><button class="save-note-button">Save</button>`;
-
-    } else {
-        addNote.innerHTML = `<button class="add-note-button"><div class="plus plus-line1"> </div><div class="plus plus-line2"> </div></button><div class="add-note-input"><div class="input-row1"><span>Enter Title:</span><input type="text" class="title-text" placeholder="Title in 40 Characters" maxlength="40"></div><textarea class="body-text scrollbar" placeholder="Write here..."></textarea></div><span class="add-note-text">ADD NOTE</span><button class="save-note-button"><img src="./assets/images/Save.png" alt="Save"class="save-note-image"></button>`
-    }
-}
-responsiveness()
-
-window.addEventListener('resize', responsiveness)
+if (screenWidth <= 750) {
+    addNote.innerHTML = `<button class="add-note-button"><div class="plus plus-line1"> </div><div class="plus plus-line2"> </div></button><span class="add-note-text">ADD NOTE</span><div class="add-note-input"><input type="text" class="title-text" placeholder="Title in 40 Characters" maxlength="40"><textarea class="body-text scrollbar" placeholder="Write here..."></textarea></div><button class="cancel-note-button">Cancel</button><button class="save-note-button">Save</button>`;
+};
 
 
 //++++++++++++++++++++++ To apply transitions and classes when clicked on add note button. ++++++++++++++++++++++++
