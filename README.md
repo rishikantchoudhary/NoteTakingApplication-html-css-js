@@ -1,6 +1,6 @@
 # SimpleNote - A Lightweight Note-Taking Web Application
 
-[Live Site Preview](https://takenotes-rishi.netlify.app/)
+[Live Site Preview](https://simplenote-rishi.netlify.app/)
 
 ## Project Description
 
