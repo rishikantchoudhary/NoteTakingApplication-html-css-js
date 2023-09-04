@@ -31,7 +31,7 @@ This project is built using HTML, vanilla CSS and JS.
 3. String methods, to combine and extract note description and date time from a single string which is saved as value in local storage.
 4. Media Query and responsive units for responsive design.
 
-[Figma file](https://www.figma.com/file/m7kuh8YWePoi73cYJXwSdT/Note-Taking-App?type=design&mode=design&t=j1cMUXEAy7rAlhHY-1)
+**Design File:** [Figma file](https://www.figma.com/file/m7kuh8YWePoi73cYJXwSdT/Note-Taking-App?type=design&mode=design&t=j1cMUXEAy7rAlhHY-1)
 
 ## Feedback and Contributions
 
